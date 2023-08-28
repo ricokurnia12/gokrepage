@@ -8,11 +8,25 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'custom-gradient':
+          'linear-gradient(221deg, #C82A34 53.27%, rgba(200, 42, 52, 0.64) 100%)',
+      },
+      fontFamily: {
+        rubik: ['Rubik', 'sans-serif'],
+        poppins: ['Poppins', 'sans-serif'],
+        urbanist: ['Urbanist', 'sans-serif'],
+      },
+      colors: {
+        primary: '#FF3A44',
+        secondary: '#FFBD00',
+        fontprimary: '#0f172a',
+        fontsecondary: '#334155',
+      },
+      screens: {
+        xs: '341px',
+        s: '460px',
       },
     },
   },
   plugins: [],
-}
+};
