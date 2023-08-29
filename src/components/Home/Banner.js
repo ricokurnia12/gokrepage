@@ -3,6 +3,7 @@ import Image from 'next/image';
 import GokreHeader from '../../assets/gokreheader.png';
 import PlayStore from '../../assets/gplaybtn.png';
 import AppStore from '../../assets/appstorebtn.png';
+import { Button } from '../Button/Button';
 
 const Banner = () => {
   return (
