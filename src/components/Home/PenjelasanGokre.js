@@ -37,9 +37,7 @@ const PenjelasanGokre = () => {
               impian.
             </p>
             <div className="self-start ">
-              <Button className="mt-4  ">
-                Daftar Sekarang
-              </Button>
+              <Button className="mt-4  ">Daftar Sekarang</Button>
             </div>
           </div>
         </div>
