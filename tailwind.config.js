@@ -30,7 +30,7 @@ module.exports = withMT({
         primary: '#FF3A44',
         secondary: '#FFBD00',
         fontprimary: '#0f172a',
-        fontsecondary: '#334155',
+        fontsecondary: '#222831',
       },
       screens: {
         xs: '341px',

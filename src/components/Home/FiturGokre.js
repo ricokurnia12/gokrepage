@@ -7,7 +7,7 @@ import {
 } from '@material-tailwind/react';
 
 import { fiturGokre as fitur } from '../Data';
-import BelajarCover from '../../assets/fitur/tescover.png';
+import BelajarCover from '../../assets/fitur/berlatihgokre.png';
 import Tester from '../../assets/fitur/Neutral Minimalist Fashion Frame Mockup Instagram Story (700 x 1400 piksel) (700 x 1300 piksel) (3).gif';
 import Image from 'next/image';
 
@@ -48,8 +48,10 @@ const FiturGokre = () => {
 
   return (
     <>
-      <div className="container mx-auto px-4 lg:px-16 font-urbanist mt-36 max-w-screen-2xl">
-        {/* <Image src={imageFitur} className="w-44 md:self-start" /> */}
+      <div className="container mx-auto px-4 lg:px-16 font-urbanist mt-12 max-w-screen-2xl">
+        <h1 className="mb-16 text-2xl font-semibold lg:text-3xl lg:font-bold text-slate-900 text-center ">
+          Fitur-Fitur Aplikasi Go kreasi
+        </h1>
 
         {fitur.map((data, i) => {
           return (
@@ -60,11 +62,11 @@ const FiturGokre = () => {
               key={i}
             >
               <Image
-                src={imageFitur}
-                className="w-32 md:w-44 md:self-start"
+                src={data.ImgCover}
+                className="w-40 md:w-56 xl:w-64 md:self-start"
               />{' '}
               <div
-                className=" border md:border-none border-gray-300  px-2 py-1 overflow-scroll md:overflow-visible   h-80 md:h-auto "
+                className="  md:border-none  px-2 py-1 md:self-center  xl:w-[48rem] "
                 // style={{
                 //   overflow: 'scroll',
                 // }}
@@ -88,16 +90,18 @@ const FiturGokre = () => {
                           color: '#FF3A44',
                           textAlign: 'left',
                         }}
-                        className="text-sm  "
+                        className="text-sm md:text-base "
                         onClick={() => {
                           handleOpen(index + 1 + e.header);
-                          setImageFitur(e.image);
+
                           setValue(index + 1 + e.header);
                         }}
                       >
                         {e.header}
                       </AccordionHeader>
-                      <AccordionBody>{e.content}</AccordionBody>
+                      <AccordionBody className="md:text-lg text-fontsecondary">
+                        {e.content}
+                      </AccordionBody>
                     </Accordion>
                   );
                 })}

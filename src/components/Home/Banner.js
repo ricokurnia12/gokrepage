@@ -1,35 +1,76 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import Image from 'next/image';
-import GokreHeader from '../../assets/gokreheader.png';
+
 import PlayStore from '../../assets/gplaybtn.png';
 import AppStore from '../../assets/appstorebtn.png';
+import { useAnimation, motion, AnimatePresence } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 import { Button } from '../Button/Button';
 
 const Banner = () => {
+  const { ref, inView } = useInView();
+  const animation = useAnimation();
+  const animation2 = useAnimation();
+  useEffect(() => {
+    if (inView) {
+      animation.start({
+        x: 0,
+        opacity: 1,
+
+        transition: {
+          type: 'tween',
+          duration: 1.2,
+          bounce: 0.1,
+        },
+      });
+
+      animation2.start({
+        x: 0,
+        opacity: 1,
+
+        transition: {
+          type: 'tween',
+          duration: 1.2,
+          bounce: 0.1,
+        },
+      });
+    }
+    if (!inView) {
+      animation.start({ x: '-100vw', opacity: 0 });
+      animation2.start({ x: '100vw', opacity: 0 });
+    }
+    console.log('use effect hook, inView =', inView);
+  }, [inView]);
   return (
-    <div className="relative bg-custom-gradient flex justify-center h-auto font-poppins overflow-hidden">
+    <div
+      ref={ref}
+      className="relative bg-custom-gradient flex justify-center h-auto font-poppins overflow-hidden"
+    >
       <img
         src="/bgbanner.png"
         className="absolute bg-cover w-[30%] min-w-[385px]  left-0 -bottom-12  bg-no-repeat overflow-hidden"
         alt=""
       />
       <div className="flex flex-wrap md:flex-nowrap z-10  p-4 md:p-8 w-[95%] md:w-[90%] max-w-[1440px] relative ">
-        <Image
-          src={GokreHeader}
+        <motion.img
+          animate={animation}
+          src="/gokreheader.png"
           className="hidden md:block h-72 -mt-6"
         />
-        <div className="text-white ">
+
+        <motion.div animate={animation2} div className="text-white ">
           <h1 className="font-semibold text-2xl md:text-4xl mb-4">
             Belajar, Berlatih, dan Bertanding di mana saja dan kapan
             saja dengan aplikasi GO Kreasi!
           </h1>
           <p className="text-sm md:text-lg">
-            Lorem Ipsum is simply dummy text of the printing and
-            typesetting industry. Lorem Ipsum has been the industry
-            standard dummy text ever since the 1500s,
+            Aplikasi GO Kreasi memudahkan kamu untuk menerapkan
+            formula 3B: Belajar, Berlatih, dan Bertanding di mana saja
+            dan kapan saja hanya dalam satu genggaman. Membuatmu siap
+            untuk capai target akademikmu.
           </p>
-          <Image
-            src={GokreHeader}
+          <img
+            src="/gokreheader.png"
             className="block md:hidden w-64 mx-auto md:h-72 lg:-mt-6"
           />
           <div className="flex gap-4 mt-4  justify-center md:justify-start">
@@ -40,7 +81,7 @@ const Banner = () => {
               <Image src={AppStore} className="w-32 md:w-44" />
             </a>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
