@@ -20,6 +20,8 @@ module.exports = withMT({
           'linear-gradient(221deg, #C82A34 53.27%, rgba(200, 42, 52, 0.64) 100%)',
         'custom-gradient2':
           'linear-gradient(295deg, hsl(356deg 65% 47%) 0%, hsl(356deg 64% 49%) 29%, hsl(356deg 62% 50%) 48%, hsl(357deg 63% 51%) 61%, hsl(357deg 65% 52%) 69%, hsl(357deg 66% 53%) 75%, hsl(357deg 68% 55%) 80%, hsl(357deg 70% 56%) 83%, hsl(357deg 72% 57%) 86%, hsl(357deg 74% 58%) 89%, hsl(357deg 76% 59%) 91%, hsl(356deg 78% 60%) 94%, hsl(356deg 81% 61%) 96%, hsl(356deg 83% 63%) 98%, hsl(356deg 86% 64%) 100%)',
+        'custom-gradient3':
+          'linear-gradient(264deg, #DC3545 -215.62%, #FFC10A 117.51%)',
       },
       fontFamily: {
         rubik: ['Rubik', 'sans-serif'],

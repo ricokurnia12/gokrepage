@@ -10,6 +10,8 @@ import { fiturGokre as fitur } from '../Data';
 import BelajarCover from '../../assets/fitur/berlatihgokre.png';
 import Tester from '../../assets/fitur/Neutral Minimalist Fashion Frame Mockup Instagram Story (700 x 1400 piksel) (700 x 1300 piksel) (3).gif';
 import Image from 'next/image';
+import { useAnimation, motion, AnimatePresence } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
 function Icon({ id, open }) {
   return (
@@ -33,6 +35,39 @@ function Icon({ id, open }) {
 }
 
 const FiturGokre = () => {
+  const { ref, inView } = useInView();
+  const animation = useAnimation();
+  const animation2 = useAnimation();
+  useEffect(() => {
+    if (inView) {
+      animation.start({
+        x: 0,
+        opacity: 1,
+
+        transition: {
+          type: 'tween',
+          duration: 1.2,
+          bounce: 0.1,
+        },
+      });
+
+      animation2.start({
+        x: 0,
+        opacity: 1,
+
+        transition: {
+          type: 'tween',
+          duration: 1.2,
+          bounce: 0.1,
+        },
+      });
+    }
+    if (!inView) {
+      animation.start({ x: '-100vw', opacity: 0 });
+      animation2.start({ x: '100vw', opacity: 0 });
+    }
+    console.log('use effect hook, inView =', inView);
+  }, [inView]);
   const [imageFitur, setImageFitur] = React.useState(BelajarCover);
   console.log(fitur);
   const [open, setOpen] = React.useState(0);
@@ -48,14 +83,17 @@ const FiturGokre = () => {
 
   return (
     <>
-      <div className="container mx-auto px-4 lg:px-16 font-urbanist mt-12 max-w-screen-2xl">
+      <div
+        ref={ref}
+        className="container mx-auto px-4 lg:px-16 font-urbanist mt-12 max-w-screen-2xl overflow-hidden"
+      >
         <h1 className="mb-16 text-2xl font-semibold lg:text-3xl lg:font-bold text-slate-900 text-center ">
           Fitur-Fitur Aplikasi Go kreasi
         </h1>
 
         {fitur.map((data, i) => {
           return (
-            <div
+            <motion.div
               className={`flex flex-col ${
                 i === 1 ? 'md:flex-row-reverse' : 'md:flex-row'
               }  justify-center items-center gap-4 mb-12 `}
@@ -64,8 +102,9 @@ const FiturGokre = () => {
               <Image
                 src={data.ImgCover}
                 className="w-40 md:w-56 xl:w-64 md:self-start"
-              />{' '}
-              <div
+              />
+              <motion.div
+                animate={animation2}
                 className="  md:border-none  px-2 py-1 md:self-center  xl:w-[48rem] "
                 // style={{
                 //   overflow: 'scroll',
@@ -105,10 +144,23 @@ const FiturGokre = () => {
                     </Accordion>
                   );
                 })}
-              </div>
-            </div>
+              </motion.div>
+            </motion.div>
           );
         })}
+        <div className="flex flex-col justify-center items-center">
+          <h3 className="mb-16 text-xl font-semibold lg:text-2xl lg:font-bold text-slate-900 text-center ">
+            Untuk Lebih Lengkapnya Kamu Bisa Lihat Video Berikut
+          </h3>
+          <iframe
+            className="w-80vw  md:w-full max-w-4xl aspect-video relative shadow-lg shadow-gray-500 rounded-lg"
+            src="https://www.youtube.com/embed/f_dub0lfbTA"
+            title="GO Kreasi Semua Jadi Mudah Di Mana Saja Kapan Saja"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
       </div>
     </>
   );

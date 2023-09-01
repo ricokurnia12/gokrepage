@@ -30,8 +30,6 @@ const Testimoni = () => {
         x: 0,
         opacity: 1,
 
-        
-
         transition: {
           type: 'tween',
           duration: 1.2,
@@ -74,7 +72,7 @@ const Testimoni = () => {
     <div className={`bg-custom-gradient2 py-1 mb:py-4 pb-16 mt-16`}>
       <div className=" container mx-auto px-4 lg:px-16 font-urbanist mt-4 md:mt-8 max-w-screen-2xl">
         <h1 className="mb-8 md:mb-16 text-2xl font-semibold lg:text-3xl lg:font-bold text-white text-center ">
-          Apa Kata Mereka yang Sudah Menggunakan Aplikasi GO Kreasi?
+          Kata Mereka yang Sudah Menggunakan GO Kreasi!
         </h1>
 
         <div ref={ref} className="flex justify-center px-2 ">
@@ -95,7 +93,7 @@ const Testimoni = () => {
                       className={`md:self-end w-[70vw] md:w-[80%]`}
                     />
                     <iframe
-                      className="w-80vw  md:w-[40rem] aspect-video relative"
+                      className="w-80vw  md:w-[40rem] aspect-video relative shadow-gray-500 rounded-lg"
                       // width="707"
                       // height="398"
                       src={e.Link}

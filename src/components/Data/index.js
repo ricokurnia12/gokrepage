@@ -58,7 +58,7 @@ export const fiturGokre = [
         header: (
           <>
             <p>
-              <i>Profiling </i>GOA dan VAK
+              <i>Profiling </i>(GOA dan VAK)
             </p>
           </>
         ),
@@ -66,12 +66,12 @@ export const fiturGokre = [
           <>
             Pada fitur <i>Profiling</i> terdapat dua tes yang
             bertujuan untuk pengumpulan, analisis, dan interpretasi
-            data tentang SobatGO untuk memahami karakteristik, dan
-            gaya belajarmu. Tujuannya untuk menghasilkan informasi
-            untuk merancang pengalaman pembelajaran yang lebih efektif
-            dan sesuai dengan kebutuhan SobatGO. Kedua alat tes
-            tersebut merupakan GO <i>Assesment</i> yang mana GO
-            <i>Assesment</i> bertujuan untuk mengukur pemahaman dan
+            data tentang SobatGO untuk memahami karakteristik dan gaya
+            belajarmu. Tujuannya untuk menghasilkan informasi untuk
+            merancang pengalaman pembelajaran yang lebih efektif dan
+            sesuai dengan kebutuhan SobatGO. Kedua alat tes tersebut
+            merupakan GO <i>Assesment</i> yang mana GO
+            <i> Assesment</i> bertujuan untuk mengukur pemahaman dan
             keterampilan SobatGO dalam hal hitungan matematika dasar,
             namun tenang aja SobatGO GOA bukanlah ujian akademis untuk
             menentukan apakah SobatGO bisa bergabung atau tidak dengan
@@ -88,20 +88,8 @@ export const fiturGokre = [
         header: <>Teori (Buku Teori dan Rumus) </>,
         content: (
           <>
-            Pada fitur Profiling terdapat dua tes yang bertujuan untuk
-            pengumpulan, analisis, dan interpretasi data tentang
-            SobatGO untuk memahami karakteristik, dan gaya belajarmu.
-            Tujuannya untuk menghasilkan informasi untuk merancang
-            pengalaman pembelajaran yang lebih efektif dan sesuai
-            dengan kebutuhan SobatGO. Kedua alat tes tersebut
-            merupakan GO Assesment yang mana GO Assesment bertujuan
-            untuk mengukur pemahaman dan keterampilan SobatGO dalam
-            hal hitungan matematika dasar, namun tenang aja SobatGO
-            GOA bukanlah ujian akademis untuk menentukan apakah
-            SobatGO bisa bergabung atau tidak dengan GO. Lalu ada juga
-            tes Modalitas, yaitu tes yang bertujuan untuk mengetahui
-            gaya belajar atau cara paling sesuai bagi SobatGO dalam
-            menyerap pelajaran dengan mudah.
+            Pada fitur teori terdapat dua menu yang dapat membantu
+            SobatGO dalam proses belajar, yaitu Buku Teori dan Rumus.
             <ul className="list-outside list-disc w-[90%] mx-auto">
               <li>
                 Buku Teori berisi teori singkat, contoh soal, dan soal
@@ -153,12 +141,12 @@ export const fiturGokre = [
               <li>
                 TST Super, menu ini memungkinkan SobatGO untuk
                 mengetahui dan memanfaatkan jadwal serta kesediaan TST
-                Super secara efektif, maka dengan adanya fitur pada
+                Super secara efektif, maka dengan adanya fitur
                 tersebut pada aplikasi GO Kreasi SobatGO bisa
                 mendapatkan pendampingan 24 jam. Jika SobatGO masih
-                kurang paham saat mengerjakan soal GO Kreasi akan
-                membantu SobatGO lebih memahami materi melalui{' '}
-                <b>Sobat Tips.</b> Selain itu siswa juga bisa belajar
+                kurang paham saat mengerjakan soal, GO Kreasi akan
+                membantu SobatGO lebih memahami materi melalui
+                <b> Sobat Tips.</b> Selain itu kamu juga bisa belajar
                 melalui fitur video pembelajaran. Oh iya, setiap soal
                 yang sudah SobatGO kerjakan dan selesai maka akan
                 dimunculkan solusi dan video pembahasan.
@@ -195,11 +183,12 @@ export const fiturGokre = [
             kumpulan soal yang lengkap banget sebagai bahan SobatGO
             untuk dapat berlatih di mana saja dan kapan saja. Pada
             fitur ini terdapat Buku Sakti, Soal KODING, Paket
-            Intensif, Pendalaman Materi, Soal Referensi, <i>Racing</i>
-            Soal, Kuis.
+            Intensif, Pendalaman Materi, Soal Referensi,{' '}
+            <i>Racing </i>
+            Soal, dan Kuis.
             <ul className="list-outside list-disc w-[90%] mx-auto">
               <li>
-                <b className="font-semibold">Buku Sakti</b>
+                <b className="font-semibold">Buku Sakti </b>
                 merupakan soal yang disajikan secara global per mata
                 pelajaran dan per bab dan bahkan sebagian soal diambil
                 dari ujian seleksi PTN tahun-tahun sebelumnya yang
@@ -207,43 +196,49 @@ export const fiturGokre = [
                 disajikan sebagai prasyarat TOBK), dan Empati Mandiri.
               </li>
               <li>
-                <b className="font-semibold">Soal KODING</b>
+                <b className="font-semibold">Soal KODING </b>
                 adalah soal-soal yang terdapat pada Buku KODING, namun
                 ditampilkan terpisah jadi SobatGO bisa mengerjakan
                 soalnya di fitur ini.
               </li>
               <li>
-                <b className="font-semibold">Paket Intensif</b>
+                <b className="font-semibold">Paket Intensif </b>
                 ini adalah soal yang dibuat untuk SobatGO dalam
                 persiapan menghadapi UTBK-SBMPTN.
               </li>
               <li>
                 SobatGO juga akan mendapatkan soal-soal yang disiapkan
                 sebagai
-                <b className="font-semibold">Pendalaman Materi.</b>
+                <b className="font-semibold"> Pendalaman Materi. </b>
               </li>
               <li>
-                Saat SobatGO menghadapi PTS, PAS, dan PAT fitur Soal
-                Referensi ini disiapkan juga buat kamu, lho!
-                <b className="font-semibold">Soal Referensi</b>
+                Saat SobatGO menghadapi PTS, PAS, dan PAT fitur{' '}
+                <b className="font-semibold">Soal Referensi</b> ini
+                disiapkan juga buat kamu, lho!.
               </li>
               <li>
-                <b className="font-semibold">Buku Sakti</b>
+                <b className="font-semibold"> Buku Sakti </b>{' '}
+                merupakan soal yang disajikan secara global per mata
+                pelajaran dan per bab dan bahkan sebagian soal diambil
+                dari ujian seleksi PTN tahun-tahun sebelumnya yang
+                terbagi dalam Latihan Extra, Empati Wajib (soal yang
+                disajikan sebagai prasyarat TOBK), dan Empati Mandiri.
               </li>
               <li>
                 Fitur
                 <b className="font-semibold">
-                  <i>Racing</i> Soal
+                  <i> Racing </i> Soal{' '}
                 </b>
-                ini menyajikan soal yang memiliki batasan waktu dengan
-                metode<i> blocking time</i>, sehingga soal yang
+                &nbsp;ini menyajikan soal yang memiliki batasan waktu
+                dengan metode<i> blocking time</i>, sehingga soal yang
                 dikerjakan harus diselesaikan dalam durasi yang telah
                 ditentukan.
               </li>
               <li>
-                Nah kalau fitur <b>Kuis</b> ini adalah fitur berlatih
-                untuk SobatGO yang masih kelas awal, yaitu kelas 7, 8,
-                10, dan 11, tentunya mengikuti bab yang ada.
+                Nah kalau fitur <b className="font-semibold">Kuis</b>
+                ini adalah fitur berlatih untuk SobatGO yang masih
+                kelas awal, yaitu kelas 7, 8, 10, dan 11, tentunya
+                mengikuti bab yang ada.
               </li>
             </ul>
           </>
@@ -333,9 +328,9 @@ export const testimoniGokre = [
   },
   {
     Nama: 'M. Farouq Al-Farisi',
-    Diterima: 'Teknik Geologi-Unpa',
+    Diterima: 'Teknik Geologi-Unpad',
     Testimoni:
-      'Buku Teori di aplikasi GO Kreasi itu materinya lebih ringkas dan juga lebih detail untuk dapat dimengerti saat belajar',
+      'Menu yang paling saya sukai di GO Kreasi itu ada Buku Sakti dan soal Empati karena dengan menu tersebut bantu saya untuk berlatih soal agar mengasah kemampuan dan bisa dapat poin juga di menu leaderboard.',
     Additional: '(Mahasiswa Termuda Unpad 2023)',
     Link: 'https://www.youtube.com/embed/XWxF_FCeg08?start=354&end=370',
   },
