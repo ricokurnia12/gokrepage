@@ -52,7 +52,6 @@ const Testimoni = () => {
       animation2.start({ x: '100vw', opacity: 0 });
       animation3.start({ opacity: 0 });
     }
-    console.log('use effect hook, inView =', inView2);
   }, [inView, inView2]);
   const settings = {
     dots: false,
@@ -97,7 +96,7 @@ const Testimoni = () => {
                       // width="707"
                       // height="398"
                       src={e.Link}
-                      frameborder="0"
+                      frameBorder="0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                       allowfullscreen
                     ></iframe>

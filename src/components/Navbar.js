@@ -1,12 +1,14 @@
 import React from 'react';
+import Directory from '@/BaseDirectory';
 
 const Navbar = () => {
+ 
   return (
     <nav className="bg-white shadow-lg p-4 fixed top-0   w-full flex items-center justify-between z-50">
       <div className="flex items-center">
         <a target="_blank" href="https://ganeshaoperation.com/">
           <img
-            src="/logonavbar.png"
+            src={`/${Directory}/logonavbar.png`}
             alt="Ganesha Operation"
             // sizes='16px'
             className="w-28  sm:w-28 "
@@ -19,7 +21,7 @@ const Navbar = () => {
         href="https://ganeshaoperation.com/bimbel/produk/bimbelonline"
       >
         <button className="bg-primary hover:bg-red-600 text-white text-sm sm:font-semibold p-1 md:py-2 md:px-4 rounded">
-          Daftar GO Kreasi
+          Daftar Produk GO Kreasi
         </button>
       </a>
     </nav>

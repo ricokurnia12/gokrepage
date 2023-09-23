@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react';
-import Image from 'next/image';
+
 // import Brosur from '../../assets/Rectangle 37.png';
-import GokreHome1 from '../../assets/gokrehome1.png';
-import GokreHome2 from '../../assets/gokrehome2.png';
+
 import { ButtonSecondary } from '../Button/Button';
 import { useAnimation, motion, AnimatePresence } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import Directory from '@/BaseDirectory';
 
 const PenjelasanGokre = () => {
   const { ref, inView } = useInView();
@@ -51,8 +51,8 @@ const PenjelasanGokre = () => {
       animation2.start({ x: '100vw', opacity: 0 });
       animation3.start({ opacity: 0, scale: 0 });
     }
-    console.log('use effect hook, inView =', inView);
-  }, [inView]);
+    
+  }, [inView, animation, animation2, animation3]);
   return (
     <div>
       <div
@@ -73,38 +73,39 @@ const PenjelasanGokre = () => {
           /> */}
           <div className="">
             <p className=" text-fontsecondary text-sm md:text-base lg:text-lg 2xl:text-xl text-center  ">
-              GO Kreasi merupakan sebuah aplikasi pendukung
-              pembelajaran tatap muka yang dirancang oleh Bimbel
-              Ganesha Operation dalam penerapan formula 3B: Belajar,
-              Berlatih, dan Bertanding. Sebagai{' '}
-              <i>learning center </i>
-              terbaik dan terbesar di Indonesia, Ganesha Operation
-              berperan aktif dalam membantu SobatGO mencapai target
-              akademik melalui penerapan formula 3B yang telah
+              GO Kreasi merupakan aplikasi pembelajaran unggulan milik
+              Ganesha Operation yang mendukung proses belajar tatap
+              muka dan penerapan Formula 3B: Belajar, Berlatih, dan
+              Bertanding. Ganesha Operation sebagai bimbingan belajar
+              tatap muka berbasis teknologi <i>online</i>, GO berperan
+              aktif dalam membantu SobatGO mencapai target akademik
+              melalui penerapan Formula 3B yang telah
               diimplementasikan dalam aplikasi GO Kreasi. Dengan fitur
-              dan fasilitas yang komprehensif, aplikasi ini bertujuan
-              untuk membimbing SobatGO mencapai prestasi optimal dalam
+              dan fasilitas yang komprehensif, GO Kreasi mampu
+              membantu SobatGO mencapai prestasi optimal dalam
               mengerjakan PR dan tugas, meraih juara di kelas maupun
               sekolah, unggul dalam perlombaan dan kompetisi
-              olimpiade, serta membantu mewujudkan impian untuk
-              diterima di sekolah favorit dan perguruan tinggi negeri
-              impian.
+              Olimpiade, serta membantu mewujudkan impian untuk
+              diterima di sekolah favorit dan Perguruan Tinggi Negeri
+              (PTN) impian.
             </p>
             <div className="flex justify-center ">
               <ButtonSecondary className="mt-4 md:mt-8">
-                Daftar Sekarang
+                Daftar Produk GO Kreasi
               </ButtonSecondary>
             </div>
           </div>
         </motion.div>
         <div className="mt-12 md:mt-16 flex gap-8 md:gap-4 lg:gap-8 flex-col md:flex-row justify-center items-center">
-          <Image
-            src={GokreHome1}
+          <img
+            src={`/${Directory}/penjelasan/gokrehome1.png`}
             alt="GO Kreasi Ganesha Opeartion"
             className=" md:ms-0 w-80 md:w-[23rem] lg:w-[30rem] hover:lg:w-[40rem] transition-all ease-in-out duration-700 "
+            loading="lazy"
           />
-          <Image
-            src={GokreHome2}
+          <img
+            loading="lazy"
+            src={`/${Directory}/penjelasan/gokrehome2.png`}
             alt="GO Kreasi Ganesha Opeartion"
             className="w-72 ms-1 md:me-0 md:w-80 lg:w-[27rem] hover:lg:w-[37rem] transition-all ease-in-out duration-700"
           />

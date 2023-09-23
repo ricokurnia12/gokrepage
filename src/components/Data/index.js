@@ -1,38 +1,39 @@
-import Siswa from '../../assets/untuksiswa.png';
-import Ortu from '../../assets/untukortu.png';
-import Tamu from '../../assets/untuktamu.png';
-import Belajar from '../../assets/fitur/belajargokre.png';
-import Berlatih from '../../assets/fitur/berlatihgokre.png';
-import Bertanding from '../../assets/fitur/bertandinggokre.png';
 export const dataUntukSiapa = [
   {
-    Untuk: <>Untuk Siswa</>,
+    Untuk: <>Untuk Siswa GO</>,
     Content: (
       <>
-        Secara pasti, aplikasi ini akan memberikan manfaat besar
-        sebagai pendukung dalam proses pembelajaran SobatGO. Dengan
-        hanya menggunakan satu aplikasi ini, SobatGO dapat mengakses
-        berbagai fitur dan fasilitas, termasuk pencatatan kehadiran,
-        status pembayaran, serta beragam fasilitas penunjang belajar
-        yang dapat digunakan oleh SobatGO di mana pun dan kapan pun.
+        Pastinya aplikasi GO Kreasi dibuat untuk kamu yang sudah resmi
+        jadi siswa GO, aplikasinya memang dibuat khusus untuk kamu! GO
+        Kreasi dirancang agar SobatGO bisa belajar di mana saja dan
+        kapan saja, dengan fitur dan fasilitas yang lengkap untuk
+        mendampingi proses Belajar, Berlaith, dan Bertandingnya kamu
+        supaya bisa dapat nilai yang bagus saat ujian, lulus ke
+        sekolah favorit, dan akhirnya lulus ke PTN favorit. Dengan GO
+        Kreasi, kamu bisa merasakan serunya belajar dan berlatih soal,
+        sebab perolehan nilai dari hasil berlatihmu bisa kamu lihat
+        langsung di Leaderboard. Kamu pasti bangga deh bisa lihat nama
+        kamu muncul di Leaderboard GO Kreasi!
       </>
     ),
-    Image: Siswa,
+    Image: 'untuksiswa.png',
   },
   {
-    Untuk: <>Untuk Orang Tua</>,
+    Untuk: <>Untuk Orang Tua Siswa GO</>,
     Content: (
       <>
-        Tidak hanya SobatGO saja yang bisa merasakan fasilitas terbaik
-        dari aplikasi GO Kreasi, orang tuamu juga bisa tahu
-        perkembangan belajar SobatGO melalui aplikasi GO Kreasi. Semua
-        jadwal belajarmu hingga laporan dari hasil berlatih dan
-        bertanding SobatGO bisa diketahui melalui aplikasi GO Kreasi
-        orang tua. Selain itu, orang tuamu juga bisa memantau
-        kehadiran dan status pembayaran bimbel SobatGO juga, lho!
+        GO Kreasi menyediakan fitur yang memudahkan orang tua untuk
+        mendukung proses Belajar, Berlatih, dan Bertandingnya SobatGO.
+        Pada fitur GO Kreasi orang tua siswa, akan muncul laporan
+        seputar perkembangan kamu, seperti berapa soal yang sudah
+        SobatGO kerjakan hari ini, laporan kehadiran, dan termasuk
+        posisi SobatGO pada Leaderboard GO kreasi pun bisa orang tuamu
+        lihat, lho. Dengan fitur orang tua siswa pada GO kreasi, akan
+        melengkapi <i>support system</i> SobatGO dalam mencapai target
+        akademikmu!
       </>
     ),
-    Image: Ortu,
+    Image: 'untukortu.png',
   },
   {
     Untuk: <>Untuk Tamu</>,
@@ -46,7 +47,7 @@ export const dataUntukSiapa = [
         GO Kreasi.
       </>
     ),
-    Image: Tamu,
+    Image: 'untuktamu.png',
   },
 ];
 
@@ -64,23 +65,21 @@ export const fiturGokre = [
         ),
         content: (
           <>
-            Pada fitur <i>Profiling</i> terdapat dua tes yang
-            bertujuan untuk pengumpulan, analisis, dan interpretasi
-            data tentang SobatGO untuk memahami karakteristik dan gaya
-            belajarmu. Tujuannya untuk menghasilkan informasi untuk
-            merancang pengalaman pembelajaran yang lebih efektif dan
-            sesuai dengan kebutuhan SobatGO. Kedua alat tes tersebut
-            merupakan GO <i>Assesment</i> yang mana GO
-            <i> Assesment</i> bertujuan untuk mengukur pemahaman dan
-            keterampilan SobatGO dalam hal hitungan matematika dasar,
-            namun tenang aja SobatGO GOA bukanlah ujian akademis untuk
-            menentukan apakah SobatGO bisa bergabung atau tidak dengan
-            GO. Lalu ada juga tes Modalitas, yaitu tes yang bertujuan
-            untuk mengetahui gaya belajar atau cara paling sesuai bagi
-            SobatGO dalam menyerap pelajaran dengan mudah, apakah
-            SobatGO memiliki gaya belajar tipe Visual, <i>Auditory</i>
-            , atau Kinestetik. Makanya pengajar GO dalam mengajar akan
-            mengakomodir 3 gaya belajar tersebut.
+            Di GO, kamu akan mengikuti 2 (dua) jenis tes{' '}
+            <i>profiling</i>, yaitu GO <i>Assesment</i> (GOA) dan Tes
+            Modalitas: Visual, <i>Auditory</i>, dan Kinestetik (VAK).
+            GOA akan mengukur pemahaman dan keterampilan SobatGO dalam
+            hal menghitung Matematika Dasar agar SobatGO bisa
+            meningkatkan kemampuan dan tidak kesulitan untuk mengikuti
+            pembelajaran selanjutnya. Sedangkan Tes Modalitas
+            bertujuan untuk mengetahui gaya belajar yang paling sesuai
+            agar SobatGO dapat menyerap semua pembelajaran dengan
+            mudah. Tentunya, metode belajar di GO sudah mengakomodir
+            kebutuhan dari gaya belajar siswa yang Visual,{' '}
+            <i>Auditory</i>, atau Kinestetik. Kedua tes dalam fitur
+            <i> profiling </i>
+            tersebut akan menjadi dasar yang baik agar hasil 3B kamu
+            optimal!
           </>
         ),
       },
@@ -170,7 +169,7 @@ export const fiturGokre = [
         ),
       },
     ],
-    ImgCover: Belajar,
+    ImgCover: 'belajargokre.png',
   },
   {
     Title: <>Berlatih</>,
@@ -214,7 +213,7 @@ export const fiturGokre = [
               <li>
                 Saat SobatGO menghadapi PTS, PAS, dan PAT fitur{' '}
                 <b className="font-semibold">Soal Referensi</b> ini
-                disiapkan juga buat kamu, lho!.
+                disiapkan juga buat kamu, lho!
               </li>
               <li>
                 <b className="font-semibold"> Buku Sakti </b>{' '}
@@ -235,7 +234,7 @@ export const fiturGokre = [
                 ditentukan.
               </li>
               <li>
-                Nah kalau fitur <b className="font-semibold">Kuis</b>
+                Nah kalau fitur <b className="font-semibold">Kuis </b>
                 ini adalah fitur berlatih untuk SobatGO yang masih
                 kelas awal, yaitu kelas 7, 8, 10, dan 11, tentunya
                 mengikuti bab yang ada.
@@ -261,7 +260,7 @@ export const fiturGokre = [
         ),
       },
     ],
-    ImgCover: Berlatih,
+    ImgCover: 'berlatihgokre.png',
   },
   {
     Title: <>Bertanding</>,
@@ -313,7 +312,7 @@ export const fiturGokre = [
         ),
       },
     ],
-    ImgCover: Bertanding,
+    ImgCover: 'bertandinggokre.png',
   },
 ];
 

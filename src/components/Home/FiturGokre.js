@@ -7,11 +7,11 @@ import {
 } from '@material-tailwind/react';
 
 import { fiturGokre as fitur } from '../Data';
-import BelajarCover from '../../assets/fitur/berlatihgokre.png';
-import Tester from '../../assets/fitur/Neutral Minimalist Fashion Frame Mockup Instagram Story (700 x 1400 piksel) (700 x 1300 piksel) (3).gif';
+// import BelajarCover from '../../assets/fitur/berlatihgokre.png';
 import Image from 'next/image';
 import { useAnimation, motion, AnimatePresence } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import Directory from '@/BaseDirectory';
 
 function Icon({ id, open }) {
   return (
@@ -66,18 +66,18 @@ const FiturGokre = () => {
       animation.start({ x: '-100vw', opacity: 0 });
       animation2.start({ x: '100vw', opacity: 0 });
     }
-    console.log('use effect hook, inView =', inView);
+
   }, [inView]);
-  const [imageFitur, setImageFitur] = React.useState(BelajarCover);
-  console.log(fitur);
+  const [imageFitur, setImageFitur] = React.useState('');
+ 
   const [open, setOpen] = React.useState(0);
   const [value, setValue] = React.useState('');
-  console.log(value, 'valuee');
+
 
   const handleOpen = (value) => setOpen(open === value ? 0 : value);
   useEffect(() => {
     if (open === 0) {
-      setImageFitur(BelajarCover);
+      setImageFitur('');
     }
   }, [open]);
 
@@ -99,9 +99,11 @@ const FiturGokre = () => {
               }  justify-center items-center gap-4 mb-12 `}
               key={i}
             >
-              <Image
-                src={data.ImgCover}
+              <img
+                alt="go kreasi ganesha operation"
+                src={`/${Directory}/fitur/${data.ImgCover}`}
                 className="w-40 md:w-56 xl:w-64 md:self-start"
+                loading="lazy"
               />
               <motion.div
                 animate={animation2}

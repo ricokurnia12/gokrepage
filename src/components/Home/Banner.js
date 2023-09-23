@@ -1,11 +1,10 @@
 import React, { useEffect, useRef } from 'react';
 import Image from 'next/image';
 
-import PlayStore from '../../assets/gplaybtn.png';
-import AppStore from '../../assets/appstorebtn.png';
 import { useAnimation, motion, AnimatePresence } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { ButtonSecondary } from '../Button/Button';
+import Directory from '@/BaseDirectory';
 
 const Banner = () => {
   const { ref, inView } = useInView();
@@ -39,23 +38,26 @@ const Banner = () => {
       animation.start({ x: '-100vw', opacity: 0 });
       animation2.start({ x: '100vw', opacity: 0 });
     }
-    console.log('use effect hook, inView =', inView);
-  }, [inView]);
+    
+  }, [inView, animation, animation2]);
   return (
     <div
       ref={ref}
-      className="relative bg-custom-gradient flex justify-center h-auto font-poppins overflow-hidden mt-16 overflow-hidden"
+      className="relative bg-custom-gradient flex justify-center h-auto font-poppins overflow-hidden mt-16 "
     >
       <img
-        src="/bgbanner.png"
+        src={`/${Directory}/bgbanner.png`}
         className="absolute bg-cover w-[30%] min-w-[385px]  left-0 -bottom-12  bg-no-repeat overflow-hidden"
-        alt=""
+        alt="banner go kreasi"
+        loading="lazy"
       />
       <div className="flex flex-wrap md:flex-nowrap z-10 lg:items-center  p-4 md:p-8 w-[95%] md:w-[90%] max-w-[1440px] relative ">
         <motion.img
+          alt="go kreasi"
           animate={animation}
-          src="/gokreheader.png"
+          src={`/${Directory}/gokreheader.png`}
           className="hidden md:block h-72 -mt-6"
+          loading="lazy"
         />
 
         <motion.div animate={animation2} div className="text-white ">
@@ -63,27 +65,36 @@ const Banner = () => {
             Capai Target Akademikmu dengan GO Kreasi!
           </h1>
           <p className="text-sm md:text-lg">
-            Aplikasi GO Kreasi memudahkan kamu untuk menerapkan
-            formula 3B: Belajar, Berlatih, dan Bertanding di mana saja
-            dan kapan saja hanya dalam satu genggaman. Membuatmu siap
-            untuk capai target akademikmu.
+          Aplikasi GO Kreasi memudahkan kamu untuk menerapkan Formula 3B: Belajar, Berlatih, dan Bertanding di mana saja dan kapan saja hanya dalam satu genggaman. Membuatmu siap untuk capai target akademikmu dalam meraih juara di kelas maupun sekolah, unggul dalam perlombaan dan kompetisi Olimpiade, serta mewujudkan impian SobatGO untuk diterima di sekolah favorit dan Perguruan Tinggi Negeri (PTN) favorit.
           </p>
           <img
-            src="/gokreheader.png"
+            alt="go kreasi"
+            src={`/${Directory}/gokreheader.png`}
             className="block md:hidden w-64 mx-auto md:h-72 lg:-mt-6"
+            loading="lazy"
           />
           <div className="flex gap-4 mt-4  justify-center md:justify-start">
             <a
               target="_blank"
               href="https://play.google.com/store/apps/details?id=com.ganeshaoperation.kreasiv4"
             >
-              <Image src={PlayStore} className="w-32 md:w-44" />
+              <img
+                alt="playstore gokreasi"
+                src={`/${Directory}/banner/gplaybtn.png`}
+                className="w-32 md:w-44"
+                loading="lazy"
+              />
             </a>
             <a
               target="_blank"
               href="https://apps.apple.com/id/app/go-kreasi-siswa-ortu/id1634767332?l=id"
             >
-              <Image src={AppStore} className="w-32 md:w-44" />
+              <img
+                alt="appstore gokreasi"
+                src={`/${Directory}/banner/appstorebtn.png`}
+                className="w-32 md:w-44"
+                loading="lazy"
+              />
             </a>
           </div>
         </motion.div>

@@ -1,6 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
-}
+  output: 'export',
+  images: { unoptimized: true },
 
-module.exports = nextConfig
+  env: {
+    BASE_DIRECTORY: 'gokreasi',
+  },
+  basePath: '/gokreasi',
+  // reactStrictMode: true,
+};
+
+module.exports = nextConfig;
