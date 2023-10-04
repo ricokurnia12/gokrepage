@@ -3,7 +3,6 @@ import Home from '@/components/Home';
 import { ThemeProvider } from '@material-tailwind/react';
 import Footer from '@/components/Footer/Footer';
 
-
 export default function Main() {
   return (
     <div>

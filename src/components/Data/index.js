@@ -203,11 +203,12 @@ export const fiturGokre = [
               <li>
                 <b className="font-semibold">Paket Intensif </b>
                 ini adalah soal yang dibuat untuk SobatGO dalam
-                persiapan menghadapi UTBK-SBMPTN.
+                persiapan menghadapi UTBK-SNBT.
               </li>
               <li>
-                SobatGO juga akan mendapatkan soal-soal yang disiapkan
-                sebagai
+                SobatGO yang mengikuti kelas eksekutif Gold dan
+                Platinum akan mendapatkan soal-soal yang disiapkan
+                khusus di
                 <b className="font-semibold"> Pendalaman Materi. </b>
               </li>
               <li>
@@ -215,14 +216,7 @@ export const fiturGokre = [
                 <b className="font-semibold">Soal Referensi</b> ini
                 disiapkan juga buat kamu, lho!
               </li>
-              <li>
-                <b className="font-semibold"> Buku Sakti </b>{' '}
-                merupakan soal yang disajikan secara global per mata
-                pelajaran dan per bab dan bahkan sebagian soal diambil
-                dari ujian seleksi PTN tahun-tahun sebelumnya yang
-                terbagi dalam Latihan Extra, Empati Wajib (soal yang
-                disajikan sebagai prasyarat TOBK), dan Empati Mandiri.
-              </li>
+
               <li>
                 Fitur
                 <b className="font-semibold">
@@ -236,8 +230,8 @@ export const fiturGokre = [
               <li>
                 Nah kalau fitur <b className="font-semibold">Kuis </b>
                 ini adalah fitur berlatih untuk SobatGO yang masih
-                kelas awal, yaitu kelas 7, 8, 10, dan 11, tentunya
-                mengikuti bab yang ada.
+                kelas awal, yaitu kelas 4, 5, 6 , 7 , 8, 10, dan 11,
+                tentunya mengikuti bab yang ada.
               </li>
             </ul>
           </>

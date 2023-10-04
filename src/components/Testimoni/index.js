@@ -1,6 +1,6 @@
 import React from 'react';
 import { PiQuotesThin } from 'react-icons/pi';
-import Typewriter from '../Typewritter';
+// import Typewriter from '../Typewritter';
 
 const Card = ({
   className,
@@ -28,7 +28,8 @@ const Card = ({
       <div className="mt-2 flex items-center p-1 flex-col border-slate-300 border rounded-md  ">
         <PiQuotesThin />
         <p className="text-fontsecondary text-sm text-center md:text-base lg:text-lg 2xl:text-xl">
-          “{<Typewriter status={status} text={testi} delay={30} />}”
+          {/* “{<Typewriter status={status} text={testi} delay={30} />}” */}
+          {testi}
         </p>
       </div>
       <p className="text-fontprimary font-semibold text-base lg:text-lg 2xl:text-xl text-center mt-2">
